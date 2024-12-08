@@ -24,5 +24,5 @@ def part_b(lines):
 
 if __name__ == '__main__':
     lines = data('day_3.txt')
-    print(part_a(lines))
-    # print(re.findall("(don't\\(\\))|(do\\(\\))|(?:mul\\(([0-9]{1,3}),([0-9]{1,3})\\))", lines))
+    print(f'Part a ---- {part_a(lines)}')
+    print(f'Part b ---- {part_b(lines)}')

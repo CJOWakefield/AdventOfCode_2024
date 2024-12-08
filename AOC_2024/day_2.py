@@ -37,7 +37,8 @@ def part_b(lines):
 
 if __name__ == '__main__':
     lines = data('day_2.txt')
-    print(part_b(lines))
+    print(f'Part a ---- {part_a(lines)}')
+    print(f'Part b ---- {part_b(lines)}')
 
 # First attempt -- successful part 1. Part 2, less success.
 # Second attempt -- adjust format slightly, implement is_safe function for more concise evaluation. Success in part 2.

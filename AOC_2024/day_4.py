@@ -46,4 +46,5 @@ def part_b(lines):
 
 if __name__ == '__main__':
     lines = data('day_4.txt')
-    print(part_b(lines))
+    print(f'Part a ---- {part_a(lines)}')
+    print(f'Part b ---- {part_b(lines)}')

@@ -25,5 +25,5 @@ def part_b(list1, list2):
 
 if __name__ == '__main__':
     list1, list2 = data('day_1.txt')
-    print(f'Part a: {part_a(list1, list2)}')
-    print(f'Part b: {part_b(list1, list2)}')
+    print(f'Part a ---- {part_a(list1, list2)}')
+    print(f'Part b ---- {part_b(list1, list2)}')

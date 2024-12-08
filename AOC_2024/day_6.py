@@ -87,5 +87,5 @@ def part_b(maze):
 
 if __name__ == '__main__':
     map = data('day_6.txt')
-    print(f'Guard position: {find_guard(map)}')
-    print(part_b(map))
+    print(f'Part a ---- {part_a(map)}')
+    print(f'Part b ---- {part_b(map)}')

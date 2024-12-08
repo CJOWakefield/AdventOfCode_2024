@@ -69,4 +69,5 @@ def part_b(rules, cases):
 
 if __name__ == '__main__':
     rules, cases = data('day_5.txt')
-    print(part_b(rules, cases))
+    print(f'Part a ---- {part_a(rules, cases)}')
+    print(f'Part b ---- {part_b(rules, cases)}')
