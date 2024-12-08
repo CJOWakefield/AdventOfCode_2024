@@ -80,4 +80,5 @@ def part_b_recursive_mapping(rows):
 
 if __name__ == '__main__':
     rows = data('day_7.txt')
-    print(part_b_recursive_mapping(rows))
+    print(f'Part a ---- {part_a(rows)}')
+    print(f'Part b ---- {part_b_recursive_mapping(rows)}')
