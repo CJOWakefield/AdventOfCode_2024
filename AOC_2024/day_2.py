@@ -39,37 +39,6 @@ if __name__ == '__main__':
     lines = data('day_2.txt')
     print(part_b(lines))
 
-# First attempt -- successfuly part 1. Part 2, less success.
+# First attempt -- successful part 1. Part 2, less success.
 # Second attempt -- adjust format slightly, implement is_safe function for more concise evaluation. Success in part 2.
-# Conclusion -- Small selection of edge cases produced failure of first attempt. Solution reached, just a small logic gap causing edge failures.
-
-# def part_a(lines):
-    # count = 0
-    # for row in lines:
-        # diffs = [row[i] - row[i-1] if i !=0 else 0 for i, val in enumerate(row)][1:]
-        # valid, direction = True, np.sign(diffs[1])
-        # while diffs:
-        #     val = diffs.pop(0)
-        #     if np.sign(val) != direction or np.abs(val) not in range(1, 4):
-        #         valid = False
-        # if valid:
-        #     count += 1
-    # return count
-
-# def part_b(lines):
-    # count = 0
-    # for row in lines:
-        # diffs = [row[i] - row[i-1] if i !=0 else 0 for i, val in enumerate(row)][1:]
-                # orig = diffs.copy()
-                # valid, direction, safety = True, np.sign(np.mean(diffs)), 1
-                # while diffs:
-                #     val = diffs.pop(0)
-                #     if np.sign(val) != direction or np.abs(val) not in range(1, 4):
-                #         if safety > 0:
-                #             safety -= 1
-                #         else:
-                #             valid = False
-                # print(f'{orig} ---- {valid} ----- {safety}')
-                # if valid:
-                #     count += 1
-    # return count
+# Conclusion -- Small selection of edge cases produced failure of first attempt. Solution reached, just a few adjustments required.
