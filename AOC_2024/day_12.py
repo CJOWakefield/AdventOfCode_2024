@@ -27,9 +27,10 @@ def part_a(grid):
                     p = 4
                     seen.add((i, j))
                     for pos in adjacent:
-                        if is_valid(grid, i+pos[0], j+pos[1]) and (grid[i+pos[0]][j+pos[1]] == grid[row][col]) and (i+pos[0], j+pos[1]) not in seen:
-                            next.append((i+pos[0], j+pos[1]))
-                            seen.add((i+pos[0], j+pos[1]))
+                        if is_valid(grid, i+pos[0], j+pos[1]) and (grid[i+pos[0]][j+pos[1]] == grid[row][col]):
+                            if (i+pos[0], j+pos[1]) not in seen:
+                                next.append((i+pos[0], j+pos[1]))
+                                seen.add((i+pos[0], j+pos[1]))
                             p -= 1
                     perimeter += p
                     area += 1
